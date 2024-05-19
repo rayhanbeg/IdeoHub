@@ -21,7 +21,7 @@ const MyPostedJobs = () => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axiosSecure.delete(
-        `http://localhost:5000/job/${id}`
+        `https://ideohub.vercel.app/job/${id}`
       );
       console.log(data);
       toast.success("Delete Successful");

@@ -47,7 +47,7 @@ const UpdateJob = () => {
 
     try {
       const { data } = await axios.put(
-        `http://localhost:5000/job/${_id}`,
+        `https://ideohub.vercel.app/job/${_id}`,
         jobData
       )
       console.log(data)

@@ -42,7 +42,7 @@ const Registration = () => {
       const result = await signInWithGoogle()
        // get token from server using email
        const { data } = await axios.post(
-        `http://localhost:5000/jwt`,
+        `https://ideohub.vercel.app/jwt`,
         {
           email: result?.user?.email,
         },
